@@ -22,5 +22,5 @@
     "noEmit": true
   },
   "include": ["src", "tests"],
-  "exclude": ["tests/primitives-shim.ts"]
+  "exclude": ["tests/primitives-shim.ts", "tests/vendor"]
 }

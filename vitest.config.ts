@@ -2,7 +2,8 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitest/config'
 
 // The published ui-primitives build expects the DSH page (CSS modules, page
-// modules). Tests render the same 0.2.0-rc.2 components from source.
+// modules). Tests render the same 0.2.0-rc.2 components from source copies in
+// tests/vendor.
 const primitives = fileURLToPath(new URL('./tests/primitives-shim.ts', import.meta.url))
 
 export default defineConfig({

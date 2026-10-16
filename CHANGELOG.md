@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Tests no longer need a DSH source checkout: the UI components they render are vendored, unmodified, in `tests/vendor/ui-primitives` (MIT). The plugin itself is unchanged.
+
 ## 0.2.1
 
 - README: permanent deletion removes local copies only; DSH uploads the session log to the official DeepSeek API by default and how to turn that off; images uploaded to DeepSeek are not deleted remotely by DSH.

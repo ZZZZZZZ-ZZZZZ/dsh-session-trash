@@ -88,4 +88,4 @@ pnpm test        # 构建 lib/ 后运行全部测试
 
 `lib/` 随仓库提交，供从 GitHub 安装时直接使用；修改源码后请运行 `pnpm run build` 并一起提交 `lib/`。
 
-客户端测试从相邻目录 `../dsh-0.2.0-rc.2`（tag `dsh-v0.2.0-rc.2` 的 DSH 源码，见 `tests/primitives-shim.ts`）加载真实的 0.2.0-rc.2 界面组件，因为 npm 上发布的组件构建只能在 DSH 页面内运行。测试使用 npm 上发布的 DSH 0.2.0-rc.2 包：真实 JSONL 会话存储、真实工作区注册表与 Typert 网关，会话数据全部在临时目录中生成。
+客户端测试从 `tests/vendor/ui-primitives` 加载真实的 0.2.0-rc.2 界面组件（tag `dsh-v0.2.0-rc.2` 的 DSH 源码原样副本，MIT 许可证，见 `tests/primitives-shim.ts`），因为 npm 上发布的组件构建只能在 DSH 页面内运行；不需要 DSH 源码目录。测试使用 npm 上发布的 DSH 0.2.0-rc.2 包：真实 JSONL 会话存储、真实工作区注册表与 Typert 网关，会话数据全部在临时目录中生成。

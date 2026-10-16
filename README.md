@@ -88,4 +88,4 @@ pnpm test        # builds lib/ then runs every test
 
 `lib/` is committed so a GitHub install can use it directly; after changing sources run `pnpm run build` and commit `lib/` with them.
 
-The client tests render the real 0.2.0-rc.2 UI components from a DSH source checkout at `../dsh-0.2.0-rc.2` (tag `dsh-v0.2.0-rc.2`; see `tests/primitives-shim.ts`), because the published component build only runs inside the DSH page. Tests run against the DSH 0.2.0-rc.2 packages published on npm: real JSONL session storage, the real Workspace registry, and the real Typert gateway, with sessions generated in temporary directories.
+The client tests render the real 0.2.0-rc.2 UI components from unmodified MIT-licensed source copies in `tests/vendor/ui-primitives` (tag `dsh-v0.2.0-rc.2`; see `tests/primitives-shim.ts`), because the published component build only runs inside the DSH page; no DSH source checkout is needed. Tests run against the DSH 0.2.0-rc.2 packages published on npm: real JSONL session storage, the real Workspace registry, and the real Typert gateway, with sessions generated in temporary directories.
