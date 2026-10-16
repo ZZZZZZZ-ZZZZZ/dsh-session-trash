@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Trash",
+    "description": "Move conversations to a trash instead of losing them: restore them later, or delete them permanently after a second confirmation. Running or open sessions are never touched."
+  }
+}

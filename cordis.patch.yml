@@ -1,0 +1,5 @@
+# dsh-plugin-session-trash bundle layer: mount the Host service under its package
+# name. The browser half rides on this row (dsh.client in package.json).
+- insert:
+    - id: session-trash
+      name: dsh-plugin-session-trash

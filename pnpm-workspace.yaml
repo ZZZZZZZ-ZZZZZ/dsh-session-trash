@@ -1,0 +1,5 @@
+# pnpm 10+ refuses unreviewed install scripts. No dependency script is needed
+# to build or test this plugin: esbuild ships prebuilt binaries for tsdown.
+allowBuilds:
+  esbuild: true
+  koffi: false
